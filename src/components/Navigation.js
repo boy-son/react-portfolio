@@ -16,27 +16,27 @@ const styles = {
     },
 };
 
-function Navigation({activePage}) {
+function Navigation({activePage, handlePageChange}) {
     return (
         <nav>
             <ul style={styles.Navigation}>
                 <li style={styles.NavigationItem} className={activePage === 'about' ? 'active' : ''}>
-                    <a href="#about" style={styles.NavigationLink}>
+                    <a href="#about" onClick={() => handlePageChange('About')} style={styles.NavigationLink}>
                         About
                     </a>
                 </li>
                 <li style={styles.NavigationItem} className={activePage === 'portfolio' ? 'active' : ''}>
-                    <a href="#portfolio" style={styles.NavigationLink}>
+                    <a href="#portfolio" onClick={() => handlePageChange('Portfolio')} style={styles.NavigationLink}>
                         Portfolio
                     </a>
                 </li>
                 <li style={styles.NavigationItem} className={activePage === 'contact' ? 'active' : ''}>
-                    <a href="#contact" style={styles.NavigationLink}>
+                    <a href="#contact" onClick={() => handlePageChange('Contact')} style={styles.NavigationLink}>
                         Contact
                     </a>
                 </li>
                 <li style={styles.NavigationItem} className={activePage === 'resume' ? 'active' : ''}>
-                    <a href="#resume" style={styles.NavigationLink}>
+                    <a href="#resume" onClick={() => handlePageChange('Resume')} style={styles.NavigationLink}>
                         Resume
                     </a>
                 </li>

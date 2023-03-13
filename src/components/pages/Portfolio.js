@@ -37,7 +37,6 @@ function Portfolio() {
  return(
         <div style={styles.Portfolio}>
             <h2>Portfolio</h2>
-            <p>Here are some of my projects:</p>
             {projects.map((project, i) => (
                 <Project key={i} 
                 title={project.title} 

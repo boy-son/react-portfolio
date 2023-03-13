@@ -28,10 +28,14 @@ const styles = {
 function Project({title, image, description, link}) {
     return (
         <div style={styles.Project}>
-            <h2 style={styles.ProjectTitle}>{title}</h2>
-            <img src={image} alt={title} style={styles.ProjectImage}/>
-            <p style={styles.ProjectDescription}>{description}</p>
-            <a href={link} style={styles.ProjectLink}>View Project</a>
+            <div className="image-container">
+                <img src={image} alt={title} style={styles.ProjectImage}/>
+                <div className="image-info">
+                    <h2>{title}</h2>
+                    <p>{description}</p>
+                    <a href={link}>View Project</a>
+                </div>
+            </div>
         </div>
     );
 };
