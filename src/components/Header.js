@@ -14,7 +14,7 @@ function Header({activePage}) {
     return (
        <header style={styles.Header}>
             <h1>Branden Wheat</h1>
-            <img src="my-app\src\assets\sleepingbeauty.jpg" alt="Sleeping Beauty Header"/>
+            <img src="\src\assets\sleepingbeauty.jpg" alt="Sleeping Beauty Header"/>
             <Navigation activePage={activePage}/>
         </header>
        

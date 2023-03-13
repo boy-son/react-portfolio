@@ -21,22 +21,22 @@ function Navigation({activePage, handlePageChange}) {
         <nav>
             <ul style={styles.Navigation}>
                 <li style={styles.NavigationItem} className={activePage === 'about' ? 'active' : ''}>
-                    <a href="#about" onClick={() => handlePageChange('About')} style={styles.NavigationLink}>
+                    <a href="#about" onClick={() => handlePageChange('about')} style={styles.NavigationLink}>
                         About
                     </a>
                 </li>
                 <li style={styles.NavigationItem} className={activePage === 'portfolio' ? 'active' : ''}>
-                    <a href="#portfolio" onClick={() => handlePageChange('Portfolio')} style={styles.NavigationLink}>
+                    <a href="#portfolio" onClick={() => handlePageChange('portfolio')} style={styles.NavigationLink}>
                         Portfolio
                     </a>
                 </li>
                 <li style={styles.NavigationItem} className={activePage === 'contact' ? 'active' : ''}>
-                    <a href="#contact" onClick={() => handlePageChange('Contact')} style={styles.NavigationLink}>
+                    <a href="#contact" onClick={() => handlePageChange('contact')} style={styles.NavigationLink}>
                         Contact
                     </a>
                 </li>
                 <li style={styles.NavigationItem} className={activePage === 'resume' ? 'active' : ''}>
-                    <a href="#resume" onClick={() => handlePageChange('Resume')} style={styles.NavigationLink}>
+                    <a href="#resume" onClick={() => handlePageChange('resume')} style={styles.NavigationLink}>
                         Resume
                     </a>
                 </li>
