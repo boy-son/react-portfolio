@@ -29,9 +29,9 @@ function Resume() {
     return(
         <div style={styles.Resume}>
             <h2 style={styles.ResumeTitle}>Resume</h2>
-            <img src='src\assets\Untitled.png' alt='me!' style={styles.ResumeImage}/>
+            <img src='/Untitled.png' alt='me!' style={styles.ResumeImage}/>
             <p style={styles.ResumeDescription}>My Resume: </p>
-            <a href='src\assets\resume.pdf' style={styles.ResumeLink}>View Resume</a>
+            <a href='/resume.pdf' style={styles.ResumeLink}>View Resume</a>
         </div>
     );
 };

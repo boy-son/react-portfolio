@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import Header from '../Header';
-
+import '../../styles/Contact.css';
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -18,7 +17,6 @@ const Contact = () => {
     
   return (
     <div>
-      <Header activePage="contact" />
       <h1>Contact Me</h1>
       <p>Here's my contact information:</p>
       <ul>
