@@ -1,37 +1,32 @@
 import React from 'react';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/Navigation.css';
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white clean-navbar">
-      <div className="container">
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/resume">
-                Resume
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/portfolio">
-                Portfolio
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar bg="light" expand="lg">
+    <Container>
+      <Navbar.Brand href="/">Branden Wheat</Navbar.Brand>
+      <Navbar.Toggle aria-controls="navbarNav" />
+      <Navbar.Collapse id="navbarNav">
+        <Nav className="ms-auto">
+          <Nav.Link as={Link} to="/" exact>
+            About
+          </Nav.Link>
+          <Nav.Link as={Link} to="/resume">
+            Resume
+          </Nav.Link>
+          <Nav.Link as={Link} to="/portfolio">
+            Portfolio
+          </Nav.Link>
+          <Nav.Link as={Link} to="/contact">
+            Contact
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
   );
 };
 

@@ -16,13 +16,18 @@ const Contact = () => {
       };
     
   return (
-    <div>
+    <div className="d-flex justify-content-center">
+    <div className="contact">
       <h1>Contact Me</h1>
       <p>Here's my contact information:</p>
-      <ul>
-        <li>Email: branden.wheat@yahoo.com</li>
-        <li>Phone: 555-555-1212</li>
-      </ul>
+      <div className="contact-info">
+  <div className="email">
+    <span>Email:</span> branden.wheat@yahoo.com
+  </div>
+  <div className="phone">
+    <span>Phone:</span> 555-555-1212
+  </div>
+</div>
         <p>Or you can fill out this form to send me a message:</p>
         <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
@@ -33,6 +38,7 @@ const Contact = () => {
         <textarea id="message" name="message" rows="5" value={formData.message} onChange={handleChange}></textarea>
         <button type="submit">Send Message</button>
       </form>
+    </div>
     </div>
   );
 };
