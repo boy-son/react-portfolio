@@ -1,45 +1,55 @@
-.image-container {
-    position: relative;
-  }
+.portfolio {
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
 
-  .image-container img {
-    width: 50%;
-    height: 50%;
-    display: block;
-  }
-  
-  .image-info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: rgba(0,0,0,0.7);
-    padding: 10px;
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .image-info h2 {
-    font-size: 1.5rem;
-    margin: 0 0 10px;
-  }
-  
-  .image-info p {
-    font-size: 1rem;
-    margin: 0 0 10px;
-  }
-  
-  .image-info a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .image-container:hover .image-info {
-    opacity: 1;
-  }
+.project-container {
+  display: inline-block;
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+}
 
-  .image-info:hover a {
-    text-decoration: underline;
-  }
+.project-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0,0,0,0.7);
+  padding: 10px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-info h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+}
+
+.image-info p {
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.image-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.project-container:hover .image-info {
+  opacity: 1;
+}
+
+.image-info:hover a {
+  text-decoration: underline;
+}

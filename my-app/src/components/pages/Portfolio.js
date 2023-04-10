@@ -1,5 +1,8 @@
 import React from 'react';
-import Project from '../Project';
+import AwesomeSlider from 'react-awesome-slider';
+import CoreStyles from 'react-awesome-slider/src/core/styles.scss';
+import AnimationStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss';
+import '../../styles/Project.css'
 
 const projects = [
     {
@@ -24,28 +27,26 @@ const projects = [
     },
 ]
 
-const styles = {
-    Portfolio: {
-        backgroundColor: '#333',
-        color: '#fff',
-        textAlign: 'left',
-        padding: '10px'
-    },
-};
-
 function Portfolio() {
- return(
-        <div style={styles.Portfolio}>
-            <h2>Portfolio</h2>
-            {projects.map((project, i) => (
-                <Project key={i} 
-                title={project.title} 
-                image={project.image} 
-                description={project.description} 
-                link={project.link}/>
-            ))}
-        </div>
- )
-};
+  return (
+    <div className="portfolio">
+      <h2>Portfolio</h2>
+      <AwesomeSlider animation= "foldOutAnimation" cssModule={[CoreStyles, AnimationStyles]}>
+        {projects.map((project, i) => (
+          <div key={i}>
+            <div className='project-container'>
+              <img className="project-image" src={project.image} alt={project.title} />
+              <div className="image-info">
+                <h2>{project.title}</h2>
+             <p>{project.description}</p>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+            </div>
+            </div>
+        ))}
+      </AwesomeSlider>
+    </div>
+  )
+}
 
 export default Portfolio;
