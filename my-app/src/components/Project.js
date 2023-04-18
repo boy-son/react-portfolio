@@ -3,9 +3,9 @@ import '../styles/Project.css'
 
 const styles = {
     Project: {
-        backgroundColor: '#333',
+        backgroundColor: '#6e3131',
         color: '#fff',
-        textAlign: 'left',
+        textAlign: 'center',
         padding: '10px'
     },
     ProjectTitle: {

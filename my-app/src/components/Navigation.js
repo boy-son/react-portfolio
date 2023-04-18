@@ -5,7 +5,7 @@ import '../styles/Navigation.css';
 
 const Navigation = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" variant="light" expand="lg">
     <Container>
       <Navbar.Brand href="/">Branden Wheat</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarNav" />
